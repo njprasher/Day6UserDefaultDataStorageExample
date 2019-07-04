@@ -57,7 +57,12 @@ class LoginViewController: UIViewController {
         }
     }
     
-    
+    @IBAction func unWindLogutFromAnyScreen(storyboard: UIStoryboardSegue)
+    {
+        print("Logout")
+        let s = storyboard.source as! WelcomeViewController
+        print(s.lblWelcome.text!)
+    }
 
 }
 
